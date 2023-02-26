@@ -1,0 +1,217 @@
+header, body,footer { /*шрифт для всего тела страницы, обязательно указать стандартный через запятую*/
+    font-family: 'Public Sans', sans-serif;
+    max-width: 1400px;
+    width: 100%;  
+    margin: 0;
+}
+h1, h2, h3, h4, p, div{
+    display: flex;
+}
+
+header{
+    height: 100%;
+    background: inherit;
+    background-size: cover;
+    background-color: #383838;
+    color: #FFFFFF; 
+}
+
+.container .one{    
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: space-between  ;
+}
+
+
+.header .container { /* контейнера Хедера  в котором размещен  контент*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    margin-left: 60px;
+    vertical-align: bottom; /*выравнивает логотип по вертикали*/
+}
+
+.menu ul {
+    list-style: none; /*отменяет маркировку списка*/
+    display: flex; /*список становится линейным*/
+    position: relative;    
+}
+
+.menu-item {
+    margin-right: 50px; /*отступ между элементами меню справа*/
+    padding:5px;
+    font-size: 16px;
+}
+
+.menu-item a {
+    font-size: 15px;
+    line-height: 18px;     
+    color: #FFFFFF;
+    text-decoration: none; /*убирает подчеркивание ссылок, которое по умрлчанию включено*/
+}
+
+.menu-item a:hover { /*псевддоселектор, при наведении на ссылку будет появляться подчеркивание*/
+    border-bottom: 2px solid rgb(175, 29, 29);
+}   
+
+.main {
+    background-image: url("../images/homeImage.png"); /*задает фоновую картинку для блока*/
+    background-position: center;
+    background-size: cover; /*для правильного расположения картинки*/
+    padding-left: 50px;
+    color: #FFFFFF;    
+}
+
+.welcome{
+    width: 50%;
+    flex-wrap: wrap;
+}
+.welcome h1{
+    font-size: 38px;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+.welcome p{
+    display: flex;
+    font-size: 18px;
+    padding: 30px auto;
+    margin-bottom: 30px;
+}
+    
+.button {
+    display: flex;
+    font-size: 13px;    
+    border-radius: 80px;
+    box-sizing: border-box;
+    text-align: center;    
+    text-align: center;
+
+}
+.button#main-action{
+    display: block;
+    width: 208px;
+    height: 54px; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    color: #FFFFFF;
+    background: none;
+
+}
+#main-action.button:hover {
+    cursor: pointer;
+    background: #575757;
+    background-color: aquamarine;
+    color: black;
+}
+.geography{
+    display: block;
+    padding-right:10px  30px 5px 5px;
+    justify-content: flex-end; 
+}
+.geography h3{
+    display: block;
+    margin-top: 5%;
+}
+.menu.geography ul{
+    justify-content: space-between;
+    display: flex;
+}
+
+.geography a{
+    font-size: 15px;
+}
+.geography li{
+    display: flex;
+    border-top: #FFFFFF 1px solid;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.approach{
+    background-color: none;
+    color: #003331;
+    height: 500px;
+}
+.we{
+    display: flex;
+    font-size: 15px;
+    font-family: 'Libre Baskerville', sans-serif; 
+    width:678px ;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto ;
+}
+
+.step, .step2{
+    display: flex; 
+    justify-content: space-around;
+}
+h4 {
+    background: #014C48;
+    border-radius: 999px;
+    color: #FFFFFF;
+    height: 48px;
+    width: 48px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;  
+    margin-top: 60px; 
+}
+
+.step2 p{
+    width: 100px;
+    margin-left: 20px;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+section.of_success{
+    display: flex;
+    background-color:#F7F8F8;
+    color: #003331;
+    justify-content: space-evenly;
+  
+}
+.pat_one{
+    display: inline-flex;
+    height: 400px;
+    max-width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+}
+.pat_one h3{
+    flex-direction: column;
+    font-size: 22px;
+    flex-wrap: nowrap;
+}
+.of_success p{
+    font-size: 15px;
+    color: rgba(53, 83, 98, 0.8);
+}
+.pat_twoo{
+    width: 45%;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer{
+    background: #001414;
+    color: #7D9798;
+    height: 100px;
+    display: flex;
+}
+/* nav.menu{display: flex;} */
+
+.footer .menu{
+    display: flex;
+    margin-left: 40px;
+    width: 100%;
+}
+.footer .menu ul{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
