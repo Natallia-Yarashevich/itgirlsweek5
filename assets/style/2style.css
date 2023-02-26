@@ -1,0 +1,110 @@
+div {
+   display: flex;
+}
+
+body{
+    max-width: 1200px;
+    height: 100vh;
+}
+.header{
+width: 100%;
+align-items: baseline;
+background-color:rgb(169, 163, 163);
+justify-content: center;
+align-items: center;
+}
+
+.main{
+    display: flex;
+    /* width:  100%; */
+    flex-wrap: nowrap;
+    height: 70vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid black;
+    align-items: center;
+}
+section#flex{
+    display: flex;
+    height: 70vh;
+    width: 60vw;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: bisque;
+    align-items: center;
+    
+}
+.flexbox{
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: stretch;  
+    justify-content: center;
+    background-color: aquamarine;
+    align-items: flex-start; 
+    }
+
+    
+.flexcontainer{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;   
+}
+.flex-item {
+    justify-content: center;
+    display: flex;
+    border: 1px solid black;
+    background-color: rgb(231, 159, 135);
+    align-content: stretch;
+    margin: 1em;  
+}
+.flex-item:nth-child(1){
+    flex: 1 1 40%;
+    align-self: flex-end;    
+}
+.flex-item:nth-child(2){
+    flex: 1 1 40%;
+    align-self: flex-end;    
+}
+.flex-item:nth-child(3){
+    flex: 1 1 40%;
+    align-self: flex-end;    
+}
+
+.aside{
+    width: 40%;
+    justify-content: center;
+    height: 70vh;
+    margin-right: 0;
+    background-color: #6adb95;
+}
+
+h1.aside{
+    height: min-content;
+    display: flex;
+}
+
+.footer{     
+    height: 6em;
+    background-color: gray; 
+    flex-wrap: nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer-section{
+    display: inline-flex;
+    width: 25%;
+    background-color: whitesmoke;
+    align-self: auto;
+    justify-content: space-around;
+    margin: 10px;
+
+}
