@@ -76,7 +76,6 @@ header{
 .welcome p{
     display: flex;
     font-size: 18px;
-    padding: 30px auto;
     margin-bottom: 30px;
 }
     
@@ -106,7 +105,7 @@ header{
 }
 .geography{
     display: block;
-    padding-right:10px  30px 5px 5px;
+    padding:10px  30px 5px 5px;
     justify-content: flex-end; 
 }
 .geography h3{
@@ -128,7 +127,6 @@ header{
     margin-top: 10px;
 }
 .approach{
-    background-color: none;
     color: #003331;
     height: 500px;
 }

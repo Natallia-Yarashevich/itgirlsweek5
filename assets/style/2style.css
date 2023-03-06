@@ -85,7 +85,7 @@ section#flex{
     background-color: #6adb95;
 }
 
-h1.aside{
+h2.aside{
     height: min-content;
     display: flex;
 }
